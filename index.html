@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soft Story</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- ICON STAR -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
      <!-- ICON COOKIE -->
@@ -15,33 +16,40 @@
     <nav>
         <h1>Soft <span style="color: var(--primary);">Story</span></h1>
         <ul id="active">
-            <li><a href="">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#our-story">Our Story</a></li>
             <li><a href="#testimonial">Testimonial</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="icon cart-icon">
+        <div class="icon cart-icon" id="cart-btn">
             <ion-icon name="cart-outline"></ion-icon>
+            <span id="cart-count">0</span>
         </div>
         <div id="hamburger" class="icon hamburger-icon">
             <ion-icon name="menu-outline"></ion-icon>
         </div>
     </nav>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="hero-content">
             <h1>Gigit Dulu,<br> <span style="color: #ff9b54;">Baru Ngerti</span> Kenapa <br>Semua Orang Pada <span style="color: #ff9b54;"><br>Ketagihan</span>.</h1>
             <p class="subhead">Dipanggang fresh setiap hari dari dapur kami langsung ke tanganmu. <br>Hati-hati, sekali coba susah berhentinya!</p>
             <div class="cta" >
-                <a href="">Order Now</a>
-                <a href="">View Menu</a>
+                <a href="#menu">Order Now</a>
+                <a href="#menu">View Menu</a>
             </div>
             <div class="review">
                 <div class="avatar">
-                    <div class="avatar-icon one"></div>
-                    <div class="avatar-icon two"></div>
-                    <div class="avatar-icon three"></div>
+                    <div class="avatar-icon one">
+                        <img src="prabowo.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"> 
+                    </div>
+                    <div class="avatar-icon two">
+                        <img src="jokowi-1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"> 
+                    </div>
+                    <div class="avatar-icon three">
+                        <img src="bahlil.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"> 
+                    </div>
                 </div>
                 <div class="bintang">
                     <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
@@ -56,13 +64,13 @@
     </section>
 
     <section id="our-story" class="our-story">
-        <div class="image-wrapper">
+        <div class="image-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <img src="our-story.jpg" alt="" loading="lazy">
             <div class="note-image">
                 <p>EST.2025</p>
             </div>
         </div>
-        <div class="text-wrapper">
+        <div class="text-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <h2>OUR ORIGINS</h2>
             <h1>From Our <span>Kitchen</span> To Your Jar.</h1>
             <p>
@@ -81,7 +89,7 @@
     </section>
 
     <section id="testimonial" class="testimonial">
-        <div class="heading-testimonial">
+        <div class="heading-testimonial" data-aos="fade-up" data-aos-duration="1000">
             <h2>LOVE FROM THE OVEN</h2>
             <h1>What Our <span>Cookies</span><br> Lovers Say</h1>
             <div class="garis">
@@ -94,7 +102,7 @@
             </p>
         </div>
         <div class="card-wrapper">
-            <div class="card-testimonial">
+            <div class="card-testimonial" data-aos="fade-up" data-aos-duration="1000">
                 <div class="testimonial-bintang">
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
@@ -106,14 +114,14 @@
                     "Gak paham lagi, S'mores-nya beneran juara! 🍫 Pas digigit, marshmallow-nya masih gooey dan cokelatnya lumer banget. Definisi 'gigit dulu baru ngerti' itu nyata sih. Cocok banget buat nemenin nugas malem-malem!"</p>
                 <hr style="width: 100%; opacity: .2;">
                 <div class="review-profile">
-                    <img src="background.jpg" alt="">
+                    <img src="prabowo.jpg" alt="">
                     <div class="profile-detail">
                         <p>Prabowo Subianto</p>
                         <p>Presiden Indonesia</p>
                     </div>
                 </div>
             </div>
-            <div class="card-testimonial">
+            <div class="card-testimonial" data-aos="fade-up" data-aos-duration="1000">
                 <div class="testimonial-bintang">
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
@@ -125,14 +133,14 @@
                     "Jujur awalnya iseng beli karena tugas proyek temen, tapi ternyata rasanya premium banget! 🍪 Red Velvet-nya gak kemanisan, teksturnya soft-baked banget, dan berasa pake bahan berkualitas. Fix bakal langganan!"</p>
                 <hr style="width: 100%; opacity: .2;">
                 <div class="review-profile">
-                    <img src="background.jpg" alt="">
+                    <img src="jokowi-1.jpg" alt="">
                     <div class="profile-detail">
-                        <p>Jokowi Widodo</p>
+                        <p>Joko Widodo</p>
                         <p>Raja Solo</p>
                     </div>
                 </div>
             </div>
-            <div class="card-testimonial">
+            <div class="card-testimonial" data-aos="fade-up" data-aos-duration="1000">
                 <div class="testimonial-bintang">
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
@@ -144,7 +152,7 @@
                     "Cookies terbaik sih ini. Pengirimannya aman, pas sampe masih fresh banget aromanya. 🏠 Beneran bisa balikin mood setelah seharian padat jadwal kuliah. Highly recommended buat yang cari cookies rumahan tapi rasa bintang lima!"</p>
                 <hr style="width: 100%; opacity: .2;">
                 <div class="review-profile">
-                    <img src="background.jpg" alt="">
+                    <img src="bahlil.jpg" alt="">
                     <div class="profile-detail">
                         <p>Bahlil</p>
                         <p>Menteri ESDM Indonesia</p>
@@ -155,7 +163,7 @@
     </section>
 
     <section class="menu" id="menu">
-        <div class="heading-testimonial">
+        <div class="heading-testimonial" data-aos="fade-up" data-aos-duration="1000">
             <h2>LOVE FROM THE OVEN</h2>
             <h1>Meet Our <span style="color: var(--primary);">Stars</span></h1>
             <div class="garis">
@@ -168,47 +176,75 @@
             </p>
         </div>
         <div class="card-wrapper-menu">
-            <div class="card-menu">
-                <img src="background.jpg" alt="">
+            <div class="card-menu" data-aos="fade-up" data-aos-duration="1000">
+                <img src="classic.jpg" alt="">
                 <div class="card-menu-detail">
                     <h3>Classic Cookie</h3>
                     <p>Si menu paling setia yang nggak pernah gagal. Perpaduan cokelat hitam premium dengan tekstur yang crunchy di luar tapi tetap lumer di dalam. Sekali gigit, pasti langsung ketagihan!</p>
                 </div>
-                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <button class="add-to-cart-btn" data-id="classic" data-name="Classic Cookie" data-price="6500" data-image="classic.jpg">
+                    <ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart
+                </button>
                 <span>6.5K</span>
             </div>
-            <div class="card-menu">
-                <img src="background.jpg" alt="">
+            <div class="card-menu" data-aos="fade-up" data-aos-duration="1000">
+                <img src="redvelvet.jpg" alt="">
                 <div class="card-menu-detail">
                     <h3>Red Velvet Cookie</h3>
                     <p>Bukan cuma cantik di foto, tapi rasanya juga mewah banget. Teksturnya super lembut dengan sentuhan cream cheese yang bikin nagih. Definisi luxury treat yang sebenarnya!</p>
                 </div>
-                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <button class="add-to-cart-btn" data-id="redvelvet" data-name="Red Velvet Cookie" data-price="8000" data-image="redvelvet.jpg">
+                    <ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart
+                </button>
                 <span>8K</span>
             </div>
-            <div class="card-menu">
-                <img src="background.jpg" alt="">
+            <div class="card-menu" data-aos="fade-up" data-aos-duration="1000">
+                <img src="smores.jpg" alt="">
                 <div class="card-menu-detail">
                     <h3>S'Mores Cookie</h3>
                     <p>Bawa suasana api unggun ke meja belajarmu. Isian marshmallow-nya gooey banget, ditambah taburan biskuit graham yang renyah. Rasa manisnya bikin kamu nostalgia!</p>
                 </div>
-                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <button class="add-to-cart-btn" data-id="smores" data-name="S'Mores Cookie" data-price="8000" data-image="smores.jpg">
+                    <ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart
+                </button>
                 <span>8K</span>
             </div>
         </div>
     </section>
 
-
-
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <ion-icon name="close-outline" id="close-cart"></ion-icon>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items will be injected here by JS -->
+            <div class="empty-cart-message">
+                <ion-icon name="basket-outline"></ion-icon>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rp 0</span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn" onclick="checkoutWithWhatsApp()">
+                Checkout via WhatsApp <ion-icon name="logo-whatsapp"></ion-icon>
+            </button>
+        </div>
+    </div>
 
     <section id="contact" class="contact-section">
-        <div class="contact-header">
+        <div class="contact-header" data-aos="fade-up" data-aos-duration="1000">
             <span class="tag">GET IN TOUCH</span>
             <h1>Lagi Pengen yang Manis?<br> Hubungi Kami Yuk.</h1>
             <p>Mulai dari pesanan khusus sampai tanya-tanya bahan, atau sekadar mau kasih testimoni.<br> Kami ada di sini untukmu.</p>
         </div>
 
-        <div class="contact-container">
+        <div class="contact-container" data-aos="fade-up" data-aos-duration="1000">
             <!-- Left Column: Form -->
             <div class="contact-form-card">
                 <h2>Send a Message</h2>
@@ -232,7 +268,7 @@
             </div>
 
             <!-- Right Column: Info Cards -->
-            <div class="contact-info-wrapper">
+            <div class="contact-info-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <div class="info-card">
                     <div class="icon-box whatsapp">
                         <ion-icon name="logo-whatsapp"></ion-icon>
@@ -303,8 +339,11 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
+    <script>
+        AOS.init();
+    </script>   
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
