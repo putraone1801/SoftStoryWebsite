@@ -14,12 +14,12 @@
 
     <nav>
         <h1>Soft <span style="color: var(--primary);">Story</span></h1>
-        <ul id="active" class="active">
+        <ul id="active">
             <li><a href="">Home</a></li>
             <li><a href="#our-story">Our Story</a></li>
             <li><a href="#testimonial">Testimonial</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="icon cart-icon">
             <ion-icon name="cart-outline"></ion-icon>
@@ -154,10 +154,143 @@
         </div>
     </section>
 
+    <section class="menu" id="menu">
+        <div class="heading-testimonial">
+            <h2>LOVE FROM THE OVEN</h2>
+            <h1>Meet Our <span style="color: var(--primary);">Stars</span></h1>
+            <div class="garis">
+                <span class="material-symbols-outlined" style="margin: 0 10px;">
+                    cookie
+                </span>
+            </div>
+            <p>
+                Selalu segar setiap hari dengan bahan premium pilihan. Yuk, kenalan sama tiga rasa jagoan kami: Classic, Red Velvet, dan S'mores!
+            </p>
+        </div>
+        <div class="card-wrapper-menu">
+            <div class="card-menu">
+                <img src="background.jpg" alt="">
+                <div class="card-menu-detail">
+                    <h3>Classic Cookie</h3>
+                    <p>Si menu paling setia yang nggak pernah gagal. Perpaduan cokelat hitam premium dengan tekstur yang crunchy di luar tapi tetap lumer di dalam. Sekali gigit, pasti langsung ketagihan!</p>
+                </div>
+                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <span>6.5K</span>
+            </div>
+            <div class="card-menu">
+                <img src="background.jpg" alt="">
+                <div class="card-menu-detail">
+                    <h3>Red Velvet Cookie</h3>
+                    <p>Bukan cuma cantik di foto, tapi rasanya juga mewah banget. Teksturnya super lembut dengan sentuhan cream cheese yang bikin nagih. Definisi luxury treat yang sebenarnya!</p>
+                </div>
+                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <span>8K</span>
+            </div>
+            <div class="card-menu">
+                <img src="background.jpg" alt="">
+                <div class="card-menu-detail">
+                    <h3>S'Mores Cookie</h3>
+                    <p>Bawa suasana api unggun ke meja belajarmu. Isian marshmallow-nya gooey banget, ditambah taburan biskuit graham yang renyah. Rasa manisnya bikin kamu nostalgia!</p>
+                </div>
+                <a href=""><ion-icon name="cart-outline" class="cart-menu-icon"></ion-icon> Add To Cart</a>
+                <span>8K</span>
+            </div>
+        </div>
+    </section>
 
 
 
-    <!-- <section style="height: 1000px;"></section> -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <span class="tag">GET IN TOUCH</span>
+            <h1>Lagi Pengen yang Manis?<br> Hubungi Kami Yuk.</h1>
+            <p>Mulai dari pesanan khusus sampai tanya-tanya bahan, atau sekadar mau kasih testimoni.<br> Kami ada di sini untukmu.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Left Column: Form -->
+            <div class="contact-form-card">
+                <h2>Send a Message</h2>
+                <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" placeholder="Namamu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" rows="4" placeholder="Tuliskan pesanmu..." required></textarea>
+                    </div>
+                    <button type="submit">KIRIM PESAN <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </form>
+            </div>
+
+            <!-- Right Column: Info Cards -->
+            <div class="contact-info-wrapper">
+                <div class="info-card">
+                    <div class="icon-box whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </div>
+                    <div class="info-text">
+                        <span class="label">WHATSAPP</span>
+                        <p>+62 819 0754 9348</p>
+                    </div>
+                </div>
+
+                <a href="https://www.instagram.com/softstory.cookies/" target="_blank" class="info-card" style="text-decoration: none; color: inherit;">
+                    <div class="icon-box instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <div class="info-text">
+                        <span class="label">INSTAGRAM</span>
+                        <p>@softstory.cookies</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                 <h1>Soft <span style="color: var(--primary);">Story</span></h1>
+                 <p>Dibuat dengan tangan penuh cinta dan bahan-bahan terbaik. Mempermanis hari Anda!</p>
+                 <div class="social-links-footer">
+                    <a href="https://www.instagram.com/softstory.cookies/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://wa.me/6281907549348" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                 </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>EXPLORE</h4>
+                    <a href="#">Home</a>
+                    <a href="#menu">Our Menu</a>
+                    <a href="#our-story">About Us</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">Careers</a>
+                    <a href="#">Ingredients</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>LEGAL</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Soft Story. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 
